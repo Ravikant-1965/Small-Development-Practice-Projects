@@ -1,0 +1,121 @@
+.header{
+    height: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: white;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.middle-section{
+    flex: 1;
+    max-width: 650px;  /* This means that grow the div up untill 300px and then stop resizing it */
+    margin-left: 82px;
+    margin-right: 50px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    height: 25px;
+    /* margin-top: 12px; */
+    margin-left: 23px;
+    margin-right: 20px;
+}
+
+.YoutubeLogo{
+    height: 21px;
+}
+
+.search-button{
+    background-color: rgba(241, 241, 241, 0.996);
+    height: 40px; 
+    width: 60px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid rgb(203, 203, 203);
+    margin-left: -1px;
+}
+
+.Mic-button{
+    margin-left: 13px;
+    height: 38px;
+    width: 38px;
+    border-radius: 200px;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.search-bar{
+    width: 0;  /*Search Bar has a default width*/
+    /* so to make it shrink as much as possible we set its width to 0*/
+    /*
+        flex-shrink : 0;    -> Don't shrink
+        widht : 0;          -> shrink
+    */
+    
+    padding-left: 11px;
+    flex: 1;
+    height: 40px;
+    border-radius: 20px 0 0 20px; /* top-left, top-right, bottom-right, bottom-left */
+    font-size: 16px;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.search-bar::placeholder{
+    margin-left: 13px;
+    font-family: Robot, Arial;
+    font-size: 16px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;   /* vertical centering */
+    gap: 20px;             /* space between items */
+    padding: 0 10px;
+  }
+  
+.create-button {
+    display: flex;
+    align-items: center;   /* align plus icon + text */
+    gap: 8px;              /* spacing between icon and text */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+
+.right-section img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.create-button img {
+    width: 20px;
+    height: 20px;
+}
+  
+
+  
+.right-section .acc-img {
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
