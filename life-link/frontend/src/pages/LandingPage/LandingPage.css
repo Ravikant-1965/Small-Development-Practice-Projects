@@ -1,0 +1,493 @@
+/* LandingPage.css */
+
+.landing-page {
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+/* ---- NAVBAR ---- */
+.landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon { font-size: 26px; }
+.logo-text  { font-size: 22px; font-weight: 700; color: #0077b6; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-greeting {
+  font-size: 14px;
+  color: #718096;
+  margin-right: 4px;
+}
+
+.nav-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn.btn-primary {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+}
+
+.nav-btn.btn-primary:hover { background-color: #005f8e; }
+
+.nav-btn.btn-secondary {
+  background-color: white;
+  color: #0077b6;
+  border: 2px solid #0077b6;
+}
+
+.nav-btn.btn-secondary:hover { background-color: #e8f4fd; }
+
+
+/* ---- HERO SECTION ---- */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 48px;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content { flex: 1; }
+
+.hero-badge {
+  display: inline-block;
+  background-color: #fee2e2;
+  color: #c53030;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 46px;
+  font-weight: 800;
+  color: #1a202c;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-highlight { color: #0077b6; }
+
+.hero-subtitle {
+  font-size: 17px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+  background-color: #0077b6;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.hero-btn-primary:hover { background-color: #005f8e; }
+
+.hero-btn-secondary {
+  background-color: white;
+  color: #e53e3e;
+  border: 2px solid #e53e3e;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.hero-btn-secondary:hover { background-color: #fff5f5; }
+
+
+/* ---- HERO CARD (the fake profile card) ---- */
+.hero-visual { flex: 0 0 380px; }
+
+.hero-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 32px rgba(0,119,182,0.12);
+  border-top: 5px solid #0077b6;
+}
+
+.hero-card-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0077b6;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.hero-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f7fafc;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.blood-badge {
+  background-color: #e53e3e;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.donor-yes { color: #276749; }
+
+.hero-card-id {
+  margin-top: 16px;
+  text-align: center;
+  background-color: #ebf8ff;
+  color: #0077b6;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+
+/* ---- HOW IT WORKS ---- */
+.how-it-works {
+  background-color: white;
+  padding: 80px 48px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 48px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.step-card {
+  padding: 32px 24px;
+  border-radius: 12px;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background-color: #0077b6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 auto 16px;
+}
+
+.step-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+.step-card p { font-size: 14px; color: #718096; line-height: 1.6; }
+
+
+/* ---- DOCTOR CTA ---- */
+.doctor-cta {
+  background: linear-gradient(135deg, #023e8a 0%, #0077b6 100%);
+  padding: 64px 48px;
+  text-align: center;
+  color: white;
+}
+
+.doctor-cta-content { max-width: 600px; margin: 0 auto; }
+
+.doctor-cta h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+.doctor-cta p  { font-size: 16px; opacity: 0.85; margin-bottom: 28px; }
+
+.doctor-cta .hero-btn-primary {
+  background-color: white;
+  color: #0077b6;
+  font-weight: 700;
+}
+
+.doctor-cta .hero-btn-primary:hover { background-color: #e8f4fd; }
+
+
+/* ---- FOOTER ---- */
+.landing-footer {
+  background-color: #1a202c;
+  color: #a0aec0;
+  text-align: center;
+  padding: 28px;
+  font-size: 14px;
+}
+
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .hero-section  { flex-direction: column; padding: 48px 24px; }
+  .hero-title    { font-size: 32px; }
+  .hero-visual   { width: 100%; }
+  .steps-grid    { grid-template-columns: 1fr; }
+  .landing-nav   { padding: 14px 20px; }
+  .how-it-works  { padding: 48px 24px; }
+  .doctor-cta    { padding: 48px 24px; }
+}
+/* LandingPage.css
+   Styles for the home page. */
+
+.landing-page {
+  min-height: 100vh;
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0b7fab;
+}
+
+.landing-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-text-link {
+  font-weight: 700;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #dceefb 0%, #f7fbff 45%, #ffffff 100%);
+  border-radius: 0 0 40px 40px;
+  padding: 28px 0 42px;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-tag {
+  margin-bottom: 12px;
+  color: #0b7fab;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-left h1 {
+  margin-bottom: 10px;
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+.hero-quote {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #0b3258;
+}
+
+.hero-text {
+  max-width: 650px;
+  margin-bottom: 26px;
+  font-size: 18px;
+  color: #355468;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.login-tile {
+  width: 100%;
+  max-width: 400px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sample-title {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sample-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.info-section {
+  padding: 30px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.info-card {
+  padding: 24px;
+}
+
+.steps-section {
+  padding: 10px 0 40px;
+}
+
+.steps-section h2 {
+  margin-bottom: 10px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.step-box {
+  position: relative;
+  padding: 24px 24px 28px 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 48, 75, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 150px;
+}
+
+.step-box span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #0b7fab;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .landing-grid,
+  .info-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  .landing-page {
+    padding: 16px;
+  }
+
+  .landing-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-section {
+    padding: 28px 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+}

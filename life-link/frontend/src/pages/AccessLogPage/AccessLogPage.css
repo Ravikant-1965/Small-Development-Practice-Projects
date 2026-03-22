@@ -1,0 +1,243 @@
+/* AccessLogPage.css */
+
+.access-log-page {
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+/* reuse .dashboard-nav, .nav-logo-text, .nav-right, .nav-link styles */
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.nav-logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.nav-right    { display: flex; align-items: center; gap: 16px; }
+.nav-link     { font-size: 14px; color: #4a5568; text-decoration: none; font-weight: 500; }
+.nav-link:hover { color: #0077b6; }
+.nav-logout-btn { padding: 8px 18px; font-size: 14px; }
+
+
+.access-log-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* ---- PAGE HEADER ---- */
+.access-log-header {
+  margin-bottom: 28px;
+  padding: 24px;
+}
+
+.wide-card {
+  width: 100%;
+  min-height: 140px;
+}
+
+.access-log-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+
+.access-log-header p {
+  font-size: 15px;
+  color: #718096;
+  line-height: 1.6;
+}
+
+
+/* ---- STATS ---- */
+.log-stats {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-left: 4px solid #0077b6;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0077b6;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+/* ---- LOG LIST ---- */
+.logs-list {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.logs-list-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  padding: 14px 20px;
+  background-color: #2d3748;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.log-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f4f8;
+  align-items: center;
+  transition: background-color 0.15s;
+}
+
+.log-row:last-child  { border-bottom: none; }
+.log-row:hover       { background-color: #f7fafc; }
+
+.log-number {
+  font-size: 13px;
+  color: #a0aec0;
+  font-weight: 600;
+}
+
+.log-health-id {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0077b6;
+  letter-spacing: 2px;
+}
+
+.log-time {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+
+/* ---- EMPTY STATE ---- */
+.no-logs-card {
+  background: white;
+  border-radius: 14px;
+  padding: 56px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  margin-bottom: 20px;
+}
+
+.no-logs-icon { font-size: 52px; margin-bottom: 16px; }
+
+.no-logs-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+.no-logs-card p {
+  font-size: 15px;
+  color: #718096;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* ---- PRIVACY NOTE ---- */
+.privacy-note {
+  background-color: #ebf8ff;
+  border: 1px solid #bee3f8;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #2c5282;
+  line-height: 1.6;
+}
+
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 600px) {
+  .log-stats          { grid-template-columns: 1fr; }
+  .logs-list-header   { grid-template-columns: 60px 1fr; }
+  .log-row            { grid-template-columns: 60px 1fr; }
+  .log-time           { grid-column: 2; font-size: 12px; margin-top: -6px; }
+  .dashboard-nav      { padding: 14px 20px; }
+}
+/* AccessLogPage.css
+   Styles for the access log page. */
+
+.access-log-page {
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.access-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.access-log-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.access-log-header {
+  margin-bottom: 20px;
+}
+
+.empty-log-card,
+.log-item {
+  padding: 22px;
+}
+
+.log-list {
+  display: grid;
+  gap: 14px;
+}
+
+.log-item p + p {
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .access-log-page {
+    padding: 16px;
+  }
+
+  .access-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

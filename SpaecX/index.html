@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX 3D models</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="LogoDiv">
+        <a href="index.html"><img id="Logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/SpaceX_logo_black.svg" alt="Logo Not Found"></a>
+    </div>
+
+    <!-- Container for all product cards -->
+    <div id="productsContainer">
+        <div id="starship" class="products">
+            <h2>Starship</h2>
+            <div class="content">
+                <img class="productImage" src="homeAssets/starship.jpg" alt="">
+                <span class="description">SpaceX’s Starship is a fully reusable spacecraft designed for deep space missions, including Mars colonization. With a stainless-steel structure and Raptor engines, it’s built for durability and rapid reusability to lower space travel costs. It can carry over 100 tons of payload to orbit, supporting large-scale missions and interplanetary travel.</span>
+            </div>
+            <button onclick="a(1)" class="productButton">Details</button>
+        </div>
+
+        <div id="falcon9" class="products">
+            <h2>Falcon 9</h2>
+            <div class="content">
+                <img class="productImage" src="homeAssets/falcon9.jpg" alt="">
+                <span class="description">Falcon 9 is SpaceX's reliable, cost-effective workhorse designed to return safely to Earth after delivering payloads into orbit. Powered by its 9 Merlin engines on the first stage and 1 in the second. Allowing 22 tonnes to LEO.</span>
+            </div>
+            <button onclick="a(2)" class="productButton">Details</button>
+        </div>
+
+        <div id="falconHeavy" class="products">
+            <h2>Falcon Heavy</h2>
+            <div class="content">
+                <img class="productImage" src="homeAssets/falconHeavy.jpg" alt="">
+                <span class="description">Falcon Heavy is SpaceX's powerful, partially reusable rocket designed for heavy payload launches to orbit and deep space missions. It consists of three Falcon 9 boosters, generating over 5 million pounds of thrust, making it one of the most powerful rockets in operation. Falcon Heavy is ideal for large satellite deployments, interplanetary missions, and carrying significant payloads to Mars and beyond.</span>
+            </div>
+            <button onclick="a(3)" class="productButton">Details</button>
+        </div>
+
+        <div id="crewDragon" class="products">
+            <h2>Crew Dragon</h2>
+            <div class="content">
+                <img class="productImage" src="homeAssets/dragon.png" alt="">
+                <span class="description">Crew Dragon is SpaceX's spacecraft designed to carry astronauts to the International Space Station (ISS) and beyond. It features advanced safety systems, including a launch escape system, and can carry up to seven passengers. Reusable and autonomously operated, Crew Dragon aims to make human spaceflight safer and more cost-effective.</span>
+            </div>
+            <button onclick="a(4)" class="productButton">Details</button>
+        </div>
+    </div>
+
+    <!-- 3D Model Viewer Container -->
+    <div id="container"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

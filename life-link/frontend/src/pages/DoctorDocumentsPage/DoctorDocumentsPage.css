@@ -1,0 +1,7 @@
+/* DoctorDocumentsPage.css */
+.docdoc-page { min-height: 100vh; background: #f0f4f8; padding: 20px 0 30px; }
+.docdoc-card { padding: 20px; border-radius: 14px; margin-bottom: 14px; }
+.docdoc-row { display: flex; gap: 10px; align-items: center; }
+.docdoc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.docdoc-list li { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.small-btn { padding: 6px 10px; font-size: 13px; }
