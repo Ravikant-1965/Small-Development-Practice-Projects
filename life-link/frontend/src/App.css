@@ -1,9 +1,0 @@
-/* App.css — Any global layout styles that apply across the app */
-
-/* Nothing much here — most styles are in each page's own CSS file */
-/* App.css
-   Small top-level styles for the whole app shell. */
-
-.app-shell {
-  min-height: 100vh;
-}
